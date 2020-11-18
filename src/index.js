@@ -22,7 +22,7 @@ class App extends React.Component {
       return <SeasonComponent lat={this.state.lat} />;
     }
 
-    return <Spinner />;
+    return <Spinner message="Please allow the location request" />;
   }
 }
 //render the jsx
