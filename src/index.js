@@ -14,7 +14,8 @@ class App extends React.Component {
       (err) => this.setState({ error: err.message }),
     );
   }
-  render() {
+
+  renderContent() {
     if (!this.state.lat && this.state.error) {
       return <div>Error : {this.state.error}</div>;
     }
@@ -23,6 +24,10 @@ class App extends React.Component {
     }
 
     return <Spinner message="Please allow the location request" />;
+  }
+
+  render() {
+    return <React.Fragment>{this.renderContent()}</React.Fragment>;
   }
 }
 //render the jsx
