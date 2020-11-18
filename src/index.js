@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import SeasonComponent from "./SeasonComponent";
+import Spinner from "./Spinner";
 
 //class component excersise
 class App extends React.Component {
@@ -21,7 +22,7 @@ class App extends React.Component {
       return <SeasonComponent lat={this.state.lat} />;
     }
 
-    return <div>loading...</div>;
+    return <Spinner />;
   }
 }
 //render the jsx
