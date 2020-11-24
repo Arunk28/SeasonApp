@@ -2,6 +2,7 @@
   "name": "seasonapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://arunk28.github.io/SeasonApp",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
